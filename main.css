@@ -1,0 +1,41 @@
+/* .main-container {
+position: relative;
+} */
+
+.image-container {
+    width: 95vw;
+    height: 95vh;
+    margin: 0 1rem 1rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+.main-back-img {
+    width: 95vw;
+    height: 95vh;
+    object-fit: cover;
+    filter: blur(30px);
+    opacity: 0.3;
+}
+
+.grid-container {
+    width: 95vw;
+    height: 96vh;
+    margin: 0.2rem 1rem 1rem 0;
+    position: absolute;
+    top: 0;
+    left: 2.5rem;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    border-radius: 8px;
+}
