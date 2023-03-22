@@ -1,37 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday</title>
-    <link rel="stylesheet" href="main.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Shomya</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="main.js"></script>
 </head>
+
 <body>
 
-    <div class="main-container">
-        <div class="image-container">
-            <img class="main-back-img" src="asset/images/test.jpeg" alt="" srcset="">
-        </div>
-        <div class="grid-container">
-            <div class="box">
-                <div>
-
-                </div>
-            </div>
-            <div class="box">Box2</div>
-            <div class="box">Box3</div>
-            <div class="box">Box4</div>
-            <div class="box">Box5</div>
-            <div class="box">Box6</div>
-            <div class="box">Box7</div>
-            <div class="box">Box8</div>
-            <div class="box">Box9</div>
-        </div>
+  <div class="main-container">
+    <div class="image-container">
+      <img id="image" class="main-back-img" src="asset/images/sketch_img.jpg" alt="" srcset="">
     </div>
+    <div class="grid-container">
+      <div class="box" id="box1">
+        <div>
+          <button type="button" class="btn btn-primary submit-btn" data-bs-toggle="modal" data-bs-target="#modal1">
+            See Puzzle 1
+          </button>
+          <div class="search">
+            <i class="fa fa-search"></i>
+            <input type="text" class="input-txt form-control" id="input1">
+            <button class="btn btn-primary submit-btn" id="btn1" onclick="processData(1)">Submit</button>
+          </div>
+        </div>
+      </div>
 
-    
+      <div class="box" id="box2">
+        <div>
+          <button type="button" class="btn btn-primary submit-btn" data-bs-toggle="modal" data-bs-target="#modal2">
+            See Puzzle 2
+          </button>
+          <div class="search">
+            <i class="fa fa-search"></i>
+            <input type="text" class="input-txt form-control" id="input2">
+            <button class="btn btn-primary submit-btn" id="btn2" onclick="processData(2)">Submit</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="box" id="box3">
+        <div>
+          <button type="button" class="btn btn-primary submit-btn" data-bs-toggle="modal" data-bs-target="#modal3">
+            See Puzzle 3
+          </button>
+          <div class="search">
+            <i class="fa fa-search"></i>
+            <input type="text" class="input-txt form-control" id="input3">
+            <button class="btn btn-primary submit-btn" id="btn3" onclick="processData(3)">Submit</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="box" id="box4">
+        <div>
+          <button type="button" class="btn btn-primary submit-btn" data-bs-toggle="modal" data-bs-target="#modal4">
+            See Puzzle 4
+          </button>
+          <div class="search">
+            <i class="fa fa-search"></i>
+            <input type="text" class="input-txt form-control" id="input4">
+            <button class="btn btn-primary submit-btn" id="btn4" onclick="processData(4)">Submit</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="box" id="box5">
+        <div>
+          <button type="button" class="btn btn-primary submit-btn" data-bs-toggle="modal" data-bs-target="#modal5">
+            See Puzzle 5
+          </button>
+          <div class="search">
+            <i class="fa fa-search"></i>
+            <input type="text" class="input-txt form-control" id="input5">
+            <button class="btn btn-primary submit-btn" id="btn5" onclick="processData(5)">Submit</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="box" id="box6">
+        <div>
+          <button type="button" class="btn btn-primary submit-btn" data-bs-toggle="modal" data-bs-target="#modal6">
+            See Puzzle 6
+          </button>
+          <div class="search">
+            <i class="fa fa-search"></i>
+            <input type="text" class="input-txt form-control" id="input6">
+            <button class="btn btn-primary submit-btn" id="btn6" onclick="processData(6)">Submit</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="box" id="box7">
+        <div>
+          <button type="button" class="btn btn-primary submit-btn" data-bs-toggle="modal" data-bs-target="#modal7">
+            See Puzzle 7
+          </button>
+          <div class="search">
+            <i class="fa fa-search"></i>
+            <input type="text" class="input-txt form-control" id="input7">
+            <button class="btn btn-primary submit-btn" id="btn7" onclick="processData(7)">Submit</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="box" id="box8">
+        <div>
+          <button type="button" class="btn btn-primary submit-btn" data-bs-toggle="modal" data-bs-target="#modal8">
+            See Puzzle 8
+          </button>
+          <div class="search">
+            <i class="fa fa-search"></i>
+            <input type="text" class="input-txt form-control" id="input8">
+            <button class="btn btn-primary submit-btn" id="btn8" onclick="processData(8)">Submit</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="box" id="box9">
+        <div>
+          <button type="button" class="btn btn-primary submit-btn" data-bs-toggle="modal" data-bs-target="#modal9">
+            See Puzzle 9
+          </button>
+          <div class="search">
+            <i class="fa fa-search"></i>
+            <input type="text" class="input-txt form-control" id="input9">
+            <button class="btn btn-primary submit-btn" id="btn9" onclick="processData(9)">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- puzzle 1 modal -->
+  <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Puzzle 1</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Kabhi kabhi chiz najro k samne hoti h par use dekhne k lie kabhi hume apna najaria badalna padta h to kabhi
+            rang</p>
+          <p style="color: white;">
+            @@@@@@@@@@@@@@@@@@@@@@@@@@@<br>@@@@@https://shrib.com/#WaterMonitor8o8Rvb7
+            @@<br>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<br>@@@@@@@@@@@@@@@@@@@@@@</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- puzzle 2 modal -->
+  <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Puzzle 2</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>https://<img style="height: 3em;" src="asset/images/notepad.jpg" alt="" srcset="">.pw/testqwerty01</p>
+          <p>Password: 3 magical words without spaces</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- puzzle 3 modal -->
+  <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Puzzle 3</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>B L _ F F <br> _ O C C E R <br> R A B B _ T <br> B E _ I N D <br> P L A _ E</p>
+          <p>Code: Sector 9 wali ladki</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- puzzle 4 modal -->
+  <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Puzzle 4</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><a href="https://notepad.pw/testqwerty02" target="_blank">https://notepad.pw/testqwerty02</a></p>
+          <p>Password: Kidnapped bachhi ka name in small case</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- puzzle 5 modal -->
+  <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Puzzle 5</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Guess the person and ask for question</p>
+          <img style="height: 8em;" src="asset/images/pooja1.jpg" alt="" srcset="">
+          <img style="height: 8em;" src="asset/images/pooja2.jpg" alt="" srcset="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- puzzle 6 modal -->
+  <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Puzzle 6</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          History main bht se famous couples h <br>
+          HEER RANJHA <br>
+          LAILA MAJNU <br>
+          unhi m se ek is famous couple ka name batao <br>
+          <div style="display: flex; align-items: center;">
+            <img style="height: 7.5em;" src="asset/images/hrithik.jpg" alt="" srcset="">
+            <p> &nbsp; + &nbsp;</p>
+            <img style="height: 7.5em;" src="asset/images/aishwarya.jpg" alt="" srcset="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- puzzle 7 modal -->
+  <div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Puzzle 7</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><a href="https://notepad.pw/JjgitaDGgN9UmeIZRPeE" target="_blank">Link</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- puzzle 8 modal -->
+  <div class="modal fade" id="modal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Puzzle 8 </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          What do you do near <br>
+          <p>First Word: <img style="height: 7.5em;" src="asset/images/saree.jpg" alt="" srcset=""></p>
+          <p>Second Word: the confluence of the Ganges, Yamuna and a mythical third river, the Sarasvati, at Allahabad
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- puzzle 9 modal -->
+  <div class="modal fade" id="modal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Puzzle 9</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>-... .- -.. . / .--. .- .--. .- / -... .- -.-. .... .--. .- -. / -- / .- .- .--. -.- --- / -.- .. ... / -.
+            .- -- . / ... . / -... ..- .-.. .- - . / - .... .</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
+
 </html>
